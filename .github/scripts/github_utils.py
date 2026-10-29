@@ -1,7 +1,11 @@
 import subprocess
 import time
 
+<<<<<<< HEAD
 REPO_NAME = "Rikaru-yuki/extensoes"
+=======
+REPO_NAME = "Awerkori/manga-extensoes"
+>>>>>>> upstream/main
 RETRY_ATTEMPTS = 4
 RETRY_BASE_DELAY = 60
 

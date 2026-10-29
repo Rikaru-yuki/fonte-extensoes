@@ -22,7 +22,11 @@ REPO_DIR = Path.cwd()
 
 SOURCE_DIR = Path(__file__).resolve().parents[2]
 ICON_FILE = "res/mipmap-xhdpi/ic_launcher.png"
+<<<<<<< HEAD
 ICON_BASE_URL = "https://cdn.jsdelivr.net/gh/Rikaru-yuki/fonte-extensoes@main"
+=======
+ICON_BASE_URL = "https://cdn.jsdelivr.net/gh/Awerkori/manga-fonte-extensoes@main"
+>>>>>>> upstream/main
 DEFAULT_ICON_URL = f"{ICON_BASE_URL}/core/src/main/{ICON_FILE}"
 RELEASE_BASE_URL = f"https://github.com/{REPO_NAME}/releases/download"
 ASSET_LIMIT = 495  # Actual limit is 1000 but we upload 2 items per extension.
@@ -354,7 +358,11 @@ def main():
         badgeLabel="yuki",
         signingKey="55a92af7c488b5cc88a9931f50aa2a98d28638024e2b258a508192698545d663",
         contact=index_pb2.Contact(
+<<<<<<< HEAD
             website="https://github.com/Rikaru-yuki/fonte-extensoes",
+=======
+            website="https://github.com/Awerkori/manga-fonte-extensoes",
+>>>>>>> upstream/main
         ),
         extensionList=index_pb2.ExtensionList(extensions=final_extensions),
     )
@@ -419,7 +427,11 @@ def main():
             "--title",
             f"Repository Update {tag}",
             "--notes",
+<<<<<<< HEAD
             f"Automated update from Rikaru-yuki/fonte-extensoes@{current_sha}",
+=======
+            f"Automated update from Awerkori/manga-fonte-extensoes@{current_sha}",
+>>>>>>> upstream/main
         )
 
 
